@@ -48,7 +48,6 @@ h2{
     background-color: blue;
     margin-right: 1rem;
     margin-top: 1rem;
-    border-radius: 0px;
 }
 .card-text{
     margin-top: 38px;
@@ -61,7 +60,6 @@ h2{
 .button{
     text-align: center;
     background-color: blue;
-    border-radius: 5px;
     color: white;
     font-family: helvetica;
     padding: 0.5rem;
@@ -80,7 +78,6 @@ h2{
     height: 90px;
     margin-top: 5px;
     margin-bottom: 5px;
-    border-radius: 0px;
 }
 
 #threeline {
@@ -117,19 +114,16 @@ h2{
 
 .spliticon {
     height: 100%;
-    border-radius: 25px;
 }
 
 .splitbg {
     background-color: blue;
-    border-radius: 25px;
     height: 46.6%;
     margin: 1rem;
     padding: 1rem;
 }
 
 .infoparagraph {
-    border-radius: 25px;
     border: 1px solid blue;
     margin: 1rem;
     padding: 1rem;
@@ -211,5 +205,28 @@ h2{
     margin-top: 1rem;
     margin-bottom: -20px;
     padding-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+
+  .spliticon {
+    height: 100%;
+  }
+  .splitbg {
+    height:60%;
+  }
+
+  #dutch-angle {
+    height: 153%;
+    margin-bottom: -135.3%;
+  }
+  #medium-shot {
+    height:92%;
+    margin-bottom: -133.8%;
+  }
+  #ecu-shot {
+    height: 110%;
+    margin-bottom: -91.6%;
   }
 }
