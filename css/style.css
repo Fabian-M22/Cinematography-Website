@@ -26,6 +26,12 @@ a{
 a:hover{
     font-style: italic;
 }
+
+p{
+  font-family: Helvetica;
+  font-size: 12pt;
+}
+
 h2{
     font-family: Helvetica;
     font-size: 30pt;
@@ -42,7 +48,7 @@ h2{
     background-color: blue;
     margin-right: 1rem;
     margin-top: 1rem;
-    border-radius: 25px;
+    border-radius: 0px;
 }
 .card-text{
     margin-top: 38px;
@@ -74,7 +80,7 @@ h2{
     height: 90px;
     margin-top: 5px;
     margin-bottom: 5px;
-    border-radius: 15px;
+    border-radius: 0px;
 }
 
 #threeline {
@@ -90,7 +96,18 @@ h2{
     display: grid;
     grid-template-columns: 50% 50%;
     text-align: center;
+}
 
+#dutch-angle {
+    height: 47.5%;
+}
+
+#medium-shot {
+  height:39.5%;
+}
+
+#ecu-shot {
+  height: 52.8%;
 }
 
 .splitcontainer {
@@ -106,7 +123,7 @@ h2{
 .splitbg {
     background-color: blue;
     border-radius: 25px;
-    height: 500px;
+    height: 46.6%;
     margin: 1rem;
     padding: 1rem;
 }
@@ -116,6 +133,12 @@ h2{
     border: 1px solid blue;
     margin: 1rem;
     padding: 1rem;
+}
+
+.genre-tag {
+  margin-top: 2%;
+  padding-bottom: 2%;
+  margin-left: 25px;
 }
 
 @media screen and (max-width: 800px) {
@@ -143,6 +166,9 @@ h2{
     margin-top: 1px;
     margin-left: 10px;
   }
+  #oneline {
+    margin-top: 20px;
+  }
   #twoline {
     margin-top: 12px;
   }
@@ -156,16 +182,34 @@ h2{
     grid-template-columns: 100%;
   }
   .spliticon {
-    height: 89%;
+    height: 100%;
   }
   .splitbg {
     height: 100%;
+    margin-bottom: -106%;
   }
   .infoparagraph {
-    margin-top: 70px;
+    margin-top: 15%;
   }
   .btncontainer {
     grid-template-columns: 50% 50%;
     margin-top: -30px;
+  }
+  #dutch-angle {
+    height: 100%;
+    margin-bottom: -135.3%;
+  }
+  #medium-shot {
+    height:100%;
+    margin-bottom: -133.8%;
+  }
+  #ecu-shot {
+    height: 100%;
+    margin-bottom: -91.6%;
+  }
+  .genre-tag {
+    margin-top: 1rem;
+    margin-bottom: -20px;
+    padding-bottom: 1rem;
   }
 }
