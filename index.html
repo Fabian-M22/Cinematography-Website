@@ -2,63 +2,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Film Library</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Film Shots</title>
 </head>
 <body>
-    <h1>Cinematography Guide</h1>
     <nav>
-        <div>
-            <a href="#">All Shots</a>
-        </div>
-        <div>
-            <a href="shots/genre.html">Genre</a>
-        </div>
+        <div class="title">Film Shots</div>
         <div></div>
+        <a href="#">All Shots</a>
+        <a href="pages/genres.html">Genres</a>
+        <a href="pages/about.html">About</a>
     </nav>
-    <div class="container">
-        <div><h2>Different Types of Shots:</h2></div>
-        <a class="card" href="shots/extremecloseshot.html">
-            <div class="card-grid">
-                <img class="card-icon" src="imageLib/Asset 1.webp" style="max-width:100%;height:auto;" alt="#">
-                <div class="card-text" id="threeline">Extreme Close Up Shot</div>
+    <div class="grid-med">
+        <div class="first-split">
+            <a href="pages/mediumshot-gallery.html" class="border">
+                <div id="med-shots">Medium Shots</div>
+            </a>
+            <div class="visual-border">
+                <a href="pages/longshot.html" class="longshot">
+                    <div class="longshot-box">
+                        <img src="img/Mad-Max-Fury-04.jpg">
+                    </div>
+                    <div id="long-shot">Long Shot</div>
+                </a>
             </div>
+        </div>
+        <div class="grid-med-img">
+            <a href="pages/cowboyshot.html" id="content-item">
+                <div class="item">
+                    <img src="img/The-Wild-Bunch-01.jpg">
+                    <div class="caption">Cowboy Shot</div>
+                </div>
+            </a>
+            <a href="pages/mediumshot.html" id="content-item">
+                <div class="item">
+                    <img src="img/Rango-025.jpg">
+                    <div class="caption">Medium Shot</div>
+                </div>
+            </a>
+            <a href="pages/mediumfullshot.html" id="content-item">
+                <div class="item">
+                    <img src="img/Joe-Killer-62.jpg">
+                    <div class="caption">Medium Full Shot</div>
+                </div>
+            </a>
+            <a href="pages/mediumcloseupshot.html" id="content-item">
+                <div class="item">
+                    <img src="img/Army-of-Darkness-16.jpg">
+                    <div class="caption">Medium Close Up Shot</div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="closeups">
+        <a href="pages/closeupshot.html" class="closeup-shot">
+            <div id="cu-boxes"><img src="/img/Oppenheimer-64.jpg"></div>
+            <div id="cu-text">Close Up Shot</div>
         </a>
-        <a class="card" href="shots/closeupshot.html">
-            <div class="card-grid">
-                <img class="card-icon" src="imageLib/Asset 2.webp" style="max-width:100%;height:auto;" alt="#">
-                <div class="card-text" id="twoline">Close Up Shot</div>
-            </div>
+        <a href="pages/ecushot.html" class="ecu-shot">
+            <div id="cu-boxes"><img src="/img/The-Inglorious-Bastards-38.jpg"></div>
+            <div id="ecu-text">Extreme Close Up Shot</div>
         </a>
-        <a class="card" href="shots/midshot.html">
-            <div class="card-grid">
-                <img class="card-icon" src="imageLib/Asset 3.webp" style="max-width:100%;height:auto;" alt="#">
-                <div class="card-text" id="twoline">Medium Shot</div>
-            </div>
-        </a>
-        <a class="card" href="shots/midfullshot.html">
-            <div class="card-grid">
-                <img class="card-icon" src="imageLib/Asset 4.webp" style="max-width:100%;height:auto;" alt="#">
-                <div class="card-text" id="twoline">Medium Full Shot</div>
-            </div>
-        </a>
-        <a class="card" href="shots/fullshot.html">
-            <div class="card-grid">
-                <img class="card-icon" src="imageLib/Asset 5.webp" style="max-width:100%;height:auto;" alt="#">
-                <div class="card-text" id="oneline">Full Shot</div>
-            </div>
-        </a>
-        <a class="card" href="shots/longshot.html">
-            <div class="card-grid">
-                <img class="card-icon" src="imageLib/Asset 6.webp" style="max-width:100%;height:auto;" alt="#">
-                <div class="card-text" id="twoline">Long Shot</div>
-            </div>
-        </a>
-        <a class="card" href="shots/dutchangle.html">
-            <div class="card-grid">
-                <img class="card-icon" src="imageLib/Asset 1.webp" style="max-width:100%;height:auto;" alt="#">
-                <div class="card-text" id="twoline">Dutch Angle</div>
-            </div>
+    </div>
+    <div class="border-full">
+        <a href="pages/fullshot.html" class="grid-full">
+            <div id="text-fullshot1">FULL</div>
+            <div id="text-fullshot2">SHOT</div>
         </a>
     </div>
 </body>
