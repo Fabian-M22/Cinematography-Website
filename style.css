@@ -1,8 +1,8 @@
 html, body {
     margin:0;
     background-image: url(img/vanburn-gonsalves-2sL1LoHSRMA-unsplash.jpg);
-    background-size: 100%;
-    background-blend-mode:lighten;
+    background-size: 300%;
+    background-color: grey;
 }
 
 nav {
@@ -77,7 +77,7 @@ nav a:hover {
 .visual-border {
     margin-top: 2.083vw;
     margin-right: 2.083vw;
-    background-color: white;
+    background-color: transparent;
     transition: all;
     -webkit-transition: all 0.4s;
 }
@@ -195,7 +195,6 @@ a .caption {
 #cu-boxes {
     overflow: hidden;
     height: 502px;
-    position: flex;
 }
 
 #cu-text {
@@ -248,8 +247,8 @@ a .caption {
 
 .closeups .ecu-shot:hover img{
     height:100%;
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
     -webkit-transition: all 0.8s;
     transition: all 0.8s;
 }
@@ -394,4 +393,206 @@ a .caption {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
     padding-bottom: 20px;
+}
+
+.about-text-box a{
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    color: blue;
+}
+
+.desktopFormat {
+    display: block;
+}
+
+.mobileFormat {
+    display: none;
+}
+
+.genre-tag {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30pt;
+    background-color: white;
+    border: 1px solid black;
+    border-bottom: 0px;
+    padding: 1rem;
+}
+
+.genre-tag-grid {
+    display:grid;
+    grid-template-columns: 33.33% 66.66%;
+}
+
+.genre-slot {
+    margin: 2.083vw;
+}
+
+#content-item .item .genreImg {
+    height:500px;
+    margin-left: -40%;
+}
+
+.shot-grid-genres{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+#content-item .item #imagePlacement1{
+    margin-left:-90%;
+}
+
+@media screen and (max-width: 800px){
+    .mobileFormat {
+        display: block;
+    }
+
+    #content-item .item #imagePlacement1{
+        margin-left:-50%;
+    }
+
+    #content-item #genre-box {
+        height: 250px;
+    }
+
+    .genre-tag-grid {
+        display:grid;
+        grid-template-columns: 100% 0%;
+    }
+    .shot-grid-genres{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    #content-item .item .genreImg {
+        height:250px;
+        margin-left: -20%;
+    }
+
+    .desktopFormat {
+        display: none;
+    }
+
+    .title{
+        font-size: 15pt;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-right: 0px;
+    }
+    nav {
+        grid-template-columns: 30% 10% 20% 20% 20%;
+    }
+    nav a {
+        font-size: 12pt;
+    }
+    .visual-border {
+        margin: 0;
+    }
+    .longshot{
+        background-color: transparent;
+        overflow:hidden;
+    }
+    .longshot-box {
+        overflow:visible;
+    }
+    .longshot img {
+        margin-left: -230px;
+    }
+    .border {
+        padding: 1rem;
+        border: 1px solid black;
+        border-bottom: 0px;
+    }
+    .border:hover {
+        padding: 1rem;
+        border: 10px solid black;
+        border-bottom: 0px;
+    }
+    #med-shots{
+        font-size: 20pt;
+    }
+    .grid-med{
+        grid-template-columns: 100%;
+        padding: 5vw;
+        height: auto;
+    }
+    .grid-med-img{
+        grid-template-columns: 50% 50%;
+        height: 350px;
+    }
+    #content-item .item .caption {
+        opacity: 1;
+        font-size: 10pt;
+    }
+    #content-item .item {
+        display:flex;
+    }
+    #content-item .item img{
+        margin-left: -40%;
+    }
+    .first-split {
+        grid-template-columns: 100%;
+    }
+    .closeups {
+        height: 200px;
+        background-color: white;
+    }
+    #cu-boxes {
+        height: 200px;
+        overflow:hidden;
+        border: 1px solid black;
+    }
+    #cu-text {
+        font-size: 20pt;
+        position:relative;
+        margin-left: 10px;
+    }
+    .closeups .closeup-shot{
+        border: 0px solid black;
+    }
+    .closeups .ecu-shot{
+        border: 0px solid black;
+    }
+    .closeups .closeup-shot img{
+        margin-left: -30%;
+    }
+    .closeups .ecu-shot img{
+        margin-left: -30%;
+    }
+    #ecu-text {
+        font-size: 20pt;
+        margin-top: -130px;
+        position: relative;
+        margin-left: 10px;
+        margin-bottom: 0px;
+    }
+    .grid-full {
+        height:40%;
+    }
+    .grid-full #text-fullshot1 {
+        font-size: 85pt;
+        margin-top:100px;
+    }
+    .grid-full #text-fullshot2 {
+        font-size: 30pt;
+        margin-top: -80px;
+    }
+    .shot-grid{
+        margin-top: 0px;
+        grid-template-columns: 100% 0%;
+    }
+    .button {
+        margin:0.5rem;
+        margin-top: 1rem;
+        width: auto;
+    }
+    .about-grid{
+        grid-template-columns: 10% 80% 10%;
+    }
+    .about-text-box {
+        margin-top: 2.083vw;
+    }
+}
+
+@media screen and (max-width: 1600px){
 }
