@@ -331,7 +331,7 @@ a .caption {
 .shot-grid {
     display: grid;
     grid-template-columns: 30% 70%;
-    margin-top:-30%;
+    position: absolute;
 }
 
 .shot-text-box {
@@ -442,7 +442,7 @@ a .caption {
     margin-left:-90%;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) and (min-width: 0px){
     .mobileFormat {
         display: block;
     }
@@ -573,7 +573,7 @@ a .caption {
     }
     .grid-full #text-fullshot2 {
         font-size: 30pt;
-        margin-top: -80px;
+        margin-top: -60px;
     }
     .shot-grid{
         margin-top: 0px;
@@ -592,7 +592,7 @@ a .caption {
     }
 }
 
-@media screen and (max-width: 1600px){
+@media screen and (max-width: 1600px) and (min-width: 800px){
     .title {
         font-size: 30pt;
         margin: 1rem;
