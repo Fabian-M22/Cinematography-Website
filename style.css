@@ -332,6 +332,7 @@ a .caption {
     display: grid;
     grid-template-columns: 30% 70%;
     position: absolute;
+    margin-top: -30%;
 }
 
 .shot-text-box {
